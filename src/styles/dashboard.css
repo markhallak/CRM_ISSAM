@@ -1,0 +1,65 @@
+/* Reset any unwanted spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the main dashboard container fills the available space */
+.dashboard-container {
+    padding: 16px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Adjust Main Content inside Dashboard */
+.dashboard-main {
+    padding: 16px;
+    width: 100%;
+}
+
+/* Sidebar should remain fixed, and dashboard should not overflow */
+.dashboard-layout {
+    display: flex;
+}
+
+/* Performance Overview Cards */
+.performance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.performance-card {
+    background-color: #2563eb;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.performance-card div {
+    font-size: 18px;
+}
+
+.performance-value {
+    font-size: 24px;
+}
+
+/* Calendar & Latest Updates Styling */
+.calendar-container,
+.updates-container {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the dropdowns */
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
